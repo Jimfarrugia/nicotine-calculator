@@ -1,10 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
     <title>Nicotine Calculator</title>
   </head>
-  <body></body>
+
+  <body>
+    <div class="container">
+      <div class="header section center mb-2"><h1>Nicotine Calculator</h1></div>
+
+      <div>
+        <p class="center section">
+          <em>
+            I'll put an infographic about safety here. <br />Some user friendly
+            images might help in the form also.
+          </em>
+        </p>
+      </div>
+
+      <form class="row">
+        <div class="row">
+          <div class="input-field col s12 m4">
+            <input id="base-input" type="number" class="validate" />
+            <label for="base-input">Base Nicotine Strength (in mg)</label>
+          </div>
+          <div class="input-field col s12 m4">
+            <input id="target-input" type="number" class="validate" />
+            <label for="target-input">Target Strength (in mg)</label>
+          </div>
+          <div class="input-field col s12 m4">
+            <input id="amount-input" type="number" class="validate" />
+            <label for="amount-input">Amount to Make (in mL)</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s4">
+            <p>
+              <strong>Base Nicotine Strength</strong> refers to the high
+              strength nicotine base that you'll be mixing into your eliquid.
+            </p>
+          </div>
+          <div class="col s4">
+            <p>
+              <strong>Target Nicotine Strength</strong> refers to the strength
+              (in mg) that you would like your eLiquid to be.
+            </p>
+          </div>
+          <div class="col s4">
+            <p>
+              <strong>Amount to Make</strong> refers to the amount of eLiquid
+              you will be adding nicotine to.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col">
+            <button class="btn" id="calculate-btn">Calculate</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
 </html>
