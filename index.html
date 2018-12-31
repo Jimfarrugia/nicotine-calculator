@@ -12,21 +12,23 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
     <title>Nicotine Calculator</title>
+    <style>
+      .banner img {
+      }
+    </style>
   </head>
 
   <body>
     <div class="container">
-      <div class="header section center mb-2"><h1>Nicotine Calculator</h1></div>
+      <div class="header section center mb-2"><h2>Nicotine Calculator</h2></div>
 
-      <div>
-        <p class="center section">
-          <em>
-            I'll put an infographic about safety here. <br />Some user friendly
-            images might help in the form also.
-          </em>
-        </p>
+      <div class="row section banner center-align">
+        <img
+          class="responsive-img"
+          src="molecule.svg"
+          alt="nicotine molecule"
+        />
       </div>
-
       <div class="row">
         <div class="input-field col s12 m4">
           <input id="base-input" type="number" class="validate" />
@@ -61,12 +63,10 @@
           </p>
         </div>
       </div>
-      <div class="row">
-        <div class="input-field col">
-          <button class="btn" id="calculate-btn">Calculate</button>
-        </div>
-      </div>
       <div class="row" id="result"></div>
+      <div class="row center-align">
+        <button class="btn" id="calculate-btn">Calculate</button>
+      </div>
     </div>
 
     <!-- Materialize JavaScript -->

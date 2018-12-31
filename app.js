@@ -13,8 +13,15 @@ document.getElementById("calculate-btn").addEventListener("click", function() {
 
 // CALCULATE
 function calculateNicToAdd(base, target, amount, outputArea) {
-  // perform calculation and return result as html to user
-  let output = "test";
+  // check for valid inputs
 
+  // Calculate result
+  let result = (target / base) * amount;
+  // Build output HTML
+  let output = `<p class="center-align">
+                Adding <strong>${result}mL</strong> of your nicotine base to ${amount}mL of eLiquid will achieve your target strength of ${target}mg.
+                </p>
+               `;
+  // Return output
   return (outputArea.innerHTML = output);
 }
