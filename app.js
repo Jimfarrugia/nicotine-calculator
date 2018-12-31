@@ -6,6 +6,13 @@ document.getElementById("calculate-btn").addEventListener("click", function() {
   const targetInput = document.getElementById("target-input").value;
   const amountInput = document.getElementById("amount-input").value;
   const outputArea = document.getElementById("result");
+  // Check for valid inputs
+  if (!baseInput && !targetInput && !amountInput) {
+    // are they truthy values?
+    console.log("no");
+  } else {
+    console.log("yes");
+  }
   // Call calculate function
   calculateNicToAdd(baseInput, targetInput, amountInput, outputArea);
   // Display result
