@@ -1,0 +1,11 @@
+/* 
+    Result/Output Area 
+*/
+#result p {
+  text-align: center;
+  padding: 2em;
+  border: 2px solid #2bbbad;
+}
+#result .error {
+  border-color: #f44336;
+}

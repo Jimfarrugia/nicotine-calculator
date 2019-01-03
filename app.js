@@ -16,7 +16,7 @@ function calculateNicToAdd(base, target, amount) {
     // values are not truthy
     return `<p class="error">One or more input is invalid.</p>`;
   }
-  if (base == 0 || target == 0 || amount == 0) {
+  if (base <= 0 || target <= 0 || amount <= 0) {
     // values cannot be 0
     return `<p class="error">All inputs must be grater than zero.</p>`;
   }
